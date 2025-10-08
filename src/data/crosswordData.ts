@@ -39,7 +39,7 @@ export const samplePuzzle: CrosswordData = {
       { number: 3, clue: "To find and fix errors in code", answer: "DEBUG", row: 0, col: 5, direction: "down" },
       { number: 4, clue: "A way to manage application state", answer: "STORE", row: 0, col: 7, direction: "down" },
       { number: 8, clue: "A popular version control system", answer: "GIT", row: 5, col: 8, direction: "down" },
-      { number: 10, clue: "A small piece of data sent from a website", answer: "COOKIE", row: 6, col: 4, direction: "down" },
+      { number: 10, clue: "Units of digital information", answer: "BYTES", row: 6, col: 4, direction: "down" },
     ],
   },
 };

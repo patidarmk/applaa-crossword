@@ -32,6 +32,12 @@ export const generateGridData = (puzzle: CrosswordData): GridData => {
   for (const clue of allClues) {
     let { row, col } = clue;
     for (let i = 0; i < clue.answer.length; i++) {
+      // Bounds check to prevent crashing on bad data
+      if (row >= size.rows || col >= size.cols) {
+        console.error("Clue is out of bounds:", clue);
+        break; 
+      }
+
       if (grid[row][col].isBlack) {
         grid[row][col].isBlack = false;
         grid[row][col].answer = clue.answer[i];
